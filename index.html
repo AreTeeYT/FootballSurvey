@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <title>Survey Website</title>
+        <meta charset="UTF-8"/>
+        <link rel="stylesheet" href="styles.css"/>
+    </head>
+    <body>
+        <h1 id="title">Football Player Form</h1>
+        <p id="description">This is a quick sign up form with detials about yourself as a player</p>
+        <form id="survey-form">
+            <fieldset id="player-details">
+                <legend class="legend-align">Player Details</legend>
+                <label for="name" id="name-label">Full Name: 
+                    <input id="name" type="text" min-length="6" placeholder="Enter full name here" required/>
+                </label>
+                <label for="email" id="email-label">Email: 
+                    <input id="email" type="email" placeholder="Enter email here" required/>
+                </label>
+                <label for="number" id="number-label">Age (Between 15-55): 
+                    <input id="number" type="number" placeholder="Enter age here" min="15" max="55"/>
+                </label>
+            </fieldset>
+            <fieldset id="player-preferences">
+                <legend class="legend-align">Prefereneces</legend>
+                <select id="dropdown">
+                    <option value="">Select option</option>
+                    <option value="1">Goalkeeper</option>
+                    <option value="2">Defender</option>
+                    <option value="3">Midfielder</option>
+                    <option value="4">Forward</option>
+                </select>
+                <label >Right footed
+                    <input name="prefered-foot" value="R" type="radio" checked/>
+                </label>
+                <label>Left footed
+                    <input name="prefered-foot" value="L" type="radio"/>
+                </label>
+            </fieldset>
+            <fieldset id="player-positions">
+                <legend class="legend-align">Alternative Positions</legend>
+                <div id="positions-left-align">
+                    <label>GK
+                    <input value="GK" type="checkbox"/>
+                    </label>
+                    <label>LB
+                    <input value="LB" type="checkbox"/>
+                    </label>
+                    <label>CB
+                    <input value="CB" type="checkbox"/>
+                    </label>
+                    <label>RB
+                    <input value="CB" type="checkbox"/>
+                    </label>
+                    <label>CDM
+                    <input value="CDM" type="checkbox"/>
+                    </label>
+                    <label>CM
+                    <input value="CM" type="checkbox"/>
+                    </label>
+                    <label>CAM
+                    <input value="CAM" type="checkbox"/>
+                    </label>
+                </div>
+                <div id="postions-right-align">
+                    <label>LM
+                        <input value="LM" type="checkbox"/>
+                    </label>
+                    <label>LW
+                        <input value="LW" type="checkbox"/>
+                    </label>
+                    <label>RM
+                        <input value="RM" type="checkbox"/>
+                    </label>
+                    <label>RW
+                        <input value="RW" type="checkbox"/>
+                    </label>
+                    <label>CF
+                        <input value="CF" type="checkbox"/>
+                    </label>
+                    <label>ST
+                        <input value="ST" type="checkbox"/>
+                    </label>
+                </div>
+            </fieldset>
+            <fieldset id="additional-information">
+                <legend class="legend-align">Additional Information</legend>
+                <label for="additional-information-textarea">What do you believe you can bring to the team?
+                    <textarea id="additional-information-textarea" name="text-area" rows="5" cols="50"></textarea>
+                </label>
+            </fieldset>
+            <label for="submit">
+                <input id="submit" type="submit" value="Submit"/>
+            </label>
+        </form>
+        
+    </body>
+</html>
